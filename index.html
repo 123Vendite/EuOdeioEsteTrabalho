@@ -33,131 +33,110 @@
 
 
 
+        <div class="card m-4">
+          <div class="card-header">    <table>
+                <tr>
+                  <script>
 
-  <div id="projetos" class="section2">
-    <table>
-      <tr>
-        <script>
+                     function calc(valor)
+                     {
+                        if(valor=='=')
 
-           function calc(valor)
-           {
-              if(valor=='=')
+                           document.calcula.f.value = eval(document.calcula.f.value);
+                        }
+                        else
+                        {
+                           document.calcula.f.value = document.calcula.f.value + valor;
+                        }
+                     }
+                  </script>
+                  <center>
+                  <table border=5><tr><td bgcolor=gray><center>
+                     <form name=calcula>
+                        <input name=f size=25 maxlength=25><hr>
+                        <input type=button value='+' onClick='javascript:calc(value);'>
+                        <input type=button value='-' onClick='javascript:calc(value);'>
+                        <input type=button value='*' onClick='javascript:calc(value);'>
+                        <input type=button value='/' onClick='javascript:calc(value);'>
+                        <input type=button value='=' onClick='javascript:calc(value);'>
+                        <input type=reset name=resetar value='resetar'>
+                     </form>
+                  </td></tr></table>
+                </div>
+          <div class="card-body">
 
-                 document.calcula.f.value = eval(document.calcula.f.value);
-              }
-              else
-              {
-                 document.calcula.f.value = document.calcula.f.value + valor;
-              }
-           }
-        </script>
-        <center>
-        <table border=5><tr><td bgcolor=gray><center>
-           <form name=calcula>
-              <input name=f size=25 maxlength=25><hr>
-              <input type=button value='+' onClick='javascript:calc(value);'>
-              <input type=button value='-' onClick='javascript:calc(value);'>
-              <input type=button value='*' onClick='javascript:calc(value);'>
-              <input type=button value='/' onClick='javascript:calc(value);'>
-              <input type=button value='=' onClick='javascript:calc(value);'>
-              <input type=reset name=resetar value='resetar'>
-           </form>
-        </td></tr></table>
-
-          <td style= "width:60%;text-align:left;">
-              <ul style="color:Orange">
-                <h1> <u>Calculadora</u> </h1>
-                <li>Objetivo simular uma calculadora simples com as funções de:</li>
-                <li>Adição</li>
-                <li>Subtração</li>
-                <li>Multiplicação</li>
-                <li>Divisão</li>
-              </ul> </td>
-    </tr>
-    </table>
-  </div>
-
-
+            <ul style="color:Orange">
+              <h3 class="card-title" > <u>Calculadora</u> </h3>
+              <li>Objetivo simular uma calculadora simples com as funções de:</li>
+              <li>Adição</li>
+              <li>Subtração</li>
+              <li>Multiplicação</li>
+              <li>Divisão</li>
+            </ul> </td>
+            <a href="#" class="btn btn-primary">Compartilhar</a>
+          </div>
+        </div>
 
 
-    <div class="section3">
-      <table>
-        <tr>
-            <td style= "width:40%">
-              <a href="https://www.projetosifms.com.br/spaceweb/jogo/"><img class="ImagemProjeto" src="Space_Web.png"></a>
-
-             </td>
-            <td style= "width:60%;text-align:left;">
-                <ul style="color:Orange">
-                  <a href="https://www.projetosifms.com.br/spaceweb/jogo/"><h1> <u>SpaceWeb</u> </h1></a>
-                  <li>Jogo Educativo</li>
-                  <li>Ensinamentos Sobre Ameaças de computador</li>
-                  <li style="color:Blue">(Clique na imagem ou no titulo para Jogar)</li>
-                </ul> </td>
-      </tr>
-      </table>
-    </div>
-
-
-
-
-
-      <div class="section2">
-        <table>
-          <tr>
-            <div class="container">
-
-            <div class="Xandao">
-              <input type="number" name="num1" id="num1" onchange="addToList(value,1)">
-                <input type="number" name="num2" id="num2" onchange="addToList(value,2)">
-                  <input type="number" name="num3" id="num3" onchange="addToList(value,3)">
-                    <input type="number" name="num4" id="num4" onchange="addToList(value,4)">
-                      <input type="number" name="num5" id="num5" onchange="addToList(value,5)">
-                        <input type="number" name="num6" id="num6" onchange="addToList(value,6)">
-              <br>
-            </div>
-
-            <br>
-
-            <button class="button" type="button" name="button" onclick="verificarAcertos()">Sortear</button>
-
-            <ul id="numSort">
-            </ul>
-
-            <p id="totalAcertos"></p>
-            </div>
-
-            <script type="text/javascript" src="scriptlt.js">
-            </script>
-
-              <td style= "width:60%;text-align:left;">
-                  <ul style="color:Orange">
-                    <h1> <u>Loteria</u> </h1>
-                    <li>Simula um bilhete de Loteria 6Numeros</li>
-                    <li>Simula o sorteio Número a Número</li>
-                  </ul> </td>
-        </tr>
-        </table>
+      <div class="card m-4">
+        <div class="card-header">              <a href="https://www.projetosifms.com.br/spaceweb/jogo/"><img class="ImagemProjeto" src="Space_Web.png"></a></div>
+        <div class="card-body">
+          <a href="https://www.projetosifms.com.br/spaceweb/jogo/"> <h5 class="card-title">Spaceweb</h5></a>
+          <ul class="card-text" style="color:Orange">
+            <li>Jogo Educativo</li>
+            <li>Ensinamentos Sobre Ameaças de computador</li>
+            <li style="color:Blue">(Clique na imagem ou no titulo para Jogar)</li>
+          </ul>
+            <a href="#" class="btn btn-primary">Compartilhar</a>
+        </div>
       </div>
 
+      <div class="card m-4">
+        <div class="card-header">
+
+                  <div class="Xandao">
+                    <input type="number" name="num1" id="num1" onchange="addToList(value,1)">
+                      <input type="number" name="num2" id="num2" onchange="addToList(value,2)">
+                        <input type="number" name="num3" id="num3" onchange="addToList(value,3)">
+                          <input type="number" name="num4" id="num4" onchange="addToList(value,4)">
+                            <input type="number" name="num5" id="num5" onchange="addToList(value,5)">
+                              <input type="number" name="num6" id="num6" onchange="addToList(value,6)">
+                    <br>
+                  </div>
+
+                  <br>
+
+                  <button class="button" type="button" name="button" onclick="verificarAcertos()">Sortear</button>
+
+                  <ul id="numSort">
+                  </ul>
+
+                  <p id="totalAcertos"></p>
 
 
+                  <script type="text/javascript" src="scriptlt.js">
+                  </script></div>
+        <div class="card-body">
+          <h5 class="card-title">Loteria</h5>
+                          <ul class="card-text" style="color:Orange">
+                              <h1> <u>Loteria</u> </h1>
+                              <li>Simula um bilhete de Loteria 6Numeros</li>
+                              <li>Simula o sorteio Número a Número</li>
+                            </ul>
 
+        </div>
 
+        <div class="card m-4">
+          <div class="card-header">                  <a href="Site/som.html"> <img class="ImagemProjeto" src="Site.png"></a> </td></div>
+          <div class="card-body">
+            <h5 class="card-title">Patch notes lol</h5>
 
-        <div class="section3">
-          <table>
-            <tr>
-                <td style= "width:40%">
-                  <a href="Site/som.html"> <img class="ImagemProjeto" src="Site.png"></a> </td>
-                <td style= "width:60%;text-align:left;">
-                    <ul style="color:Orange">
-                      <a href="Site/som.html"><h1><u>Site Atualização</u></h1></a>
-                      <li>Site de Notas de atualização</li>
-                      <li style="color:Blue">(Clique no titulo para ir ao site)</li>
-                    </ul> </td>
-          </tr>
-          </table>
+                                <ul style="color:Orange">
+                                  <a href="Site/som.html"><h1><u>Site Atualização</u></h1></a>
+                                  <li>Site de Notas de atualização</li>
+                                  <li style="color:Blue">(Clique no titulo para ir ao site)</li>
+                                </ul>
+          </div>
         </div>
 
 
@@ -165,55 +144,66 @@
 
 
 
-          <div class="section2">
-            <table>
-              <tr>
 
-                  <div class="container">
-                    <img class="ImagemProjeto" id= "lampada" src="imagens/lampada_apagada.jpg"
-                    alt="uma lampada apagada"onmouseover="acender()"
-                    onmouseout="apagar()">
+
+
+
+
+        <div class="card m-4">
+          <div class="card-header">
+            <script type="text/javascript"src="scriptlamp.js">             <img class="ImagemProjeto" id= "lampada" src="imagens/lampada_apagada.jpg"
+                              alt="uma lampada apagada"onmouseover="acender()"
+                              onmouseout="apagar()">r    </script> </div>
+          <div class="card-body">
+            <h5 class="card-title">Lampadinha bunitinha</h5>
+            <ul class="card-text"style="color:Orange">
+
+              <li>Interruptor Online</li>
+              <li>Função:</li>
+              <li>Ela Acende</li>
+              <li>Ela Apaga</li>
+              <li>Ela apoia a Xandão</li>
+            </ul> </td>
+
+          </div>
+        </div>
+
 
                         <script type="text/javascript"src="scriptlamp.js">
 
                         </script>
-                  </div>
-                  <td style= "width:60%;text-align:left;">
-                      <ul style="color:Orange">
-                        <h1><u>Lampadinha Bunitinha</u></h1>
-                        <li>Interruptor Online</li>
-                        <li>Função:</li>
-                        <li>Ela Acende</li>
-                        <li>Ela Apaga</li>
-                        <li>Ela apoia a Xandão</li>
-                      </ul> </td>
-            </tr>
-            </table>
+
 
 
           </div>
 
-                  <div class="section4">
-                    <table>
-                      <tr>
-                                <input type="text" name="item" id="item">
-                                <button type="button" name="button" onclick="AddToList()">Salvar</button>
-                                <h3>Lista Salva</h3>
-                                <ul id="lista">
-                                </ul>
-                                <script type="text/javascript">
-                                  var lista = []
-                                  function AddToList(){
-                                    let item = document.getElementById('item').value;
-                                    lista.push(item);
-                                    let li = document.createElement("li");
-                                    li.innerHTML = item;
-                                    document.getElementById('lista').append(li);
-                                  }
-                                </script>
-                              </ul> </td>
-                    </tr>
-                    </table>
+
+          <div class="card m-4">
+            <div class="card-header"><input type="text" name="item" id="item">
+            <button type="button" name="button" onclick="AddToList()">Salvar</button>
+            <h3>Lista Salva</h3>
+            <ul id="lista">
+            </ul>
+            <script type="text/javascript">
+              var lista = []
+              function AddToList(){
+                let item = document.getElementById('item').value;
+                lista.push(item);
+                let li = document.createElement("li");
+                li.innerHTML = item;
+                document.getElementById('lista').append(li);
+              }
+            </script>
+          </ul> </div>
+            <div class="card-body">
+              <h5 class="card-title">Lista</h5>
+              <p class="card-text">Simula lista de compras</p>
+            </div>
+          </div>
+
+
+
+
                   </div>
             <div class="contatof" id="contato1">
             <form>
