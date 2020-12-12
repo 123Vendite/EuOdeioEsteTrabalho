@@ -68,12 +68,12 @@ a{
 {
   display: flex;
   height: 90vh;
-  background-color: #4cc251;
+  background-color: #993399;
 }
 .ImagemProjeto
 {
   width: 300px;
-  height:300px;
+  height:200px;
 
 }
 .section2
@@ -111,13 +111,7 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
-.container
-{
-  display: flex;
-    height: 100vh;
-      justify-content: center;
-        align-items: center;
-}
+
 .perfil
 {
   border-radius: 300px;
@@ -155,10 +149,5 @@ padding-left: 20px;
 }
 .section4
 {
-  margin: auto;
-  align-items: center;
-  display: flex;
-
-  height: 33vh;
-  background-color: white;
+  background-color: #993399;
 }
